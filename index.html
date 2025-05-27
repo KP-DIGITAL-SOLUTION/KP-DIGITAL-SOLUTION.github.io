@@ -1,108 +1,119 @@
-<!DOCTYPE html><html lang="pt">
+<!DOCTYPE html>
+<html lang="pt">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>LuenaShop by KP</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: 'Roboto', sans-serif;
+      font-family: Arial, sans-serif;
       background-color: #f4f4f4;
-      color: #333;
     }
+
     header {
-      background-color: #0a66c2;
+      background-color: #0066cc;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       color: white;
-      padding: 20px;
-      text-align: center;
     }
+
     .logo {
-      font-size: 1.8em;
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 50px;
+      margin-right: 10px;
+    }
+
+    .logo-text {
+      font-size: 22px;
       font-weight: bold;
     }
-    nav {
-      margin-top: 10px;
-    }
+
     nav a {
       color: white;
       text-decoration: none;
-      margin: 0 15px;
+      margin-left: 20px;
       font-weight: bold;
     }
+
     .hero {
-      padding: 40px;
+      padding: 50px 20px;
       text-align: center;
-      background: #e1efff;
+      background-color: white;
     }
+
     .hero h1 {
-      margin-bottom: 10px;
+      font-size: 36px;
+      color: #0066cc;
     }
-    .products {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-      gap: 20px;
-      padding: 40px;
+
+    .hero p {
+      font-size: 18px;
+      margin-top: 10px;
     }
-    .product {
-      background: white;
-      border: 1px solid #ddd;
-      padding: 15px;
+
+    .contact {
+      background-color: #fff;
+      padding: 30px 20px;
       text-align: center;
-      border-radius: 8px;
     }
-    footer {
-      background-color: #222;
+
+    .contact a {
+      display: inline-block;
+      margin-top: 15px;
+      background-color: #25d366;
       color: white;
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
-    }
-    .whatsapp {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: #25d366;
-      color: white;
-      border-radius: 50%;
-      padding: 15px;
-      font-size: 20px;
+      padding: 10px 20px;
       text-decoration: none;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #0066cc;
+      color: white;
+      padding: 15px;
     }
   </style>
 </head>
 <body>
+
   <header>
-    <div class="logo">LuenaShop by KP</div>
+    <div class="logo">
+      <img src="luenashop-logo.png" alt="LuenaShop Logo" />
+      <span class="logo-text">LuenaShop by KP</span>
+    </div>
     <nav>
       <a href="#">Início</a>
       <a href="#produtos">Produtos</a>
       <a href="#venda">Vender</a>
       <a href="#contato">Contato</a>
     </nav>
-  </header>  <section class="hero">
-    <h1>Compre e venda com facilidade em Luena!</h1>
-    <p>Artigos novos e usados. Confiável. Local. Simples.</p>
-  </section>  <section class="products" id="produtos">
-    <div class="product">
-      <h3>Telemóvel Usado</h3>
-      <p>Bom estado, preço acessível</p>
-    </div>
-    <div class="product">
-      <h3>Camiseta Nova</h3>
-      <p>Tamanhos variados, várias cores</p>
-    </div>
-    <div class="product">
-      <h3>Computador Portátil</h3>
-      <p>Ideal para trabalho e estudo</p>
-    </div>
-  </section>  <section class="hero" id="venda">
-    <h2>Quer vender algo?</h2>
-    <p>Entre em contato conosco via WhatsApp e publique seu artigo no LuenaShop!</p>
-  </section>  <footer id="contato">
-    <p>Entre em contato: kp.luenashop@gmail.com</p>
+  </header>
+
+  <section class="hero">
+    <h1>Bem-vindo à LuenaShop</h1>
+    <p>Compre e venda artigos novos e usados com facilidade em Luena.</p>
+  </section>
+
+  <section class="contact" id="contato">
+    <h2>Entre em contacto</h2>
+    <p>Está interessado em algum artigo?</p>
+    <a href="https://wa.me/244949661412?text=Estou%20interessado%20no%20seu%20artigo%2C%20ainda%20está%20disponível%3F">
+      Falar no WhatsApp
+    </a>
+  </section>
+
+  <footer>
     <p>&copy; 2025 LuenaShop by KP. Todos os direitos reservados.</p>
-  </footer><a class="whatsapp" href="https://wa.me/244XXXXXXXXX" target="_blank">W</a>
+  </footer>
 
 </body>
 </html>
