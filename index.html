@@ -1,189 +1,108 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<!DOCTYPE html><html lang="pt">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>LuenaShop By KP</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-      color: #333;
-    }
-
-    header {
-      background-color: #0a66c2;
-      color: white;
-      padding: 1.5rem;
-      text-align: center;
-      position: relative;
-    }
-
-    header img.market-banner {
-      width: 100%;
-      max-height: 200px;
-      object-fit: cover;
-      margin-bottom: 1rem;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-
-    nav {
-      background-color: #0056b3;
-      padding: 0.75rem;
-      text-align: center;
-    }
-
-    nav a {
-      color: white;
-      margin: 0 1rem;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    section {
-      padding: 2rem;
-      max-width: 1200px;
-      margin: auto;
-    }
-
-    .products {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2rem;
-    }
-
-    .product {
-      background-color: white;
-      border-radius: 8px;
-      padding: 1rem;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-      flex: 1 1 calc(33% - 2rem);
-      box-sizing: border-box;
-    }
-
-    .product img {
-      max-width: 100%;
-      border-radius: 5px;
-    }
-
-    .product h3 {
-      margin: 0.5rem 0;
-    }
-
-    .product p {
-      margin: 0.5rem 0;
-      font-size: 0.95rem;
-    }
-
-    .product-buttons a {
-      display: block;
-      margin: 0.5rem 0;
-      padding: 0.75rem;
-      border-radius: 5px;
-      text-align: center;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .whatsapp-button {
-      background-color: #25D366;
-      color: white;
-    }
-
-    .info-button {
-      background-color: #007BFF;
-      color: white;
-    }
-
-    .delivery-button {
-      background-color: #FFC107;
-      color: black;
-    }
-
-    .contact {
-      background-color: white;
-      padding: 2rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background-color: #eaeaea;
-      font-size: 0.9rem;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LuenaShop by KP</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background-color: #0a66c2;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .logo {
+      font-size: 1.8em;
+      font-weight: bold;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    .hero {
+      padding: 40px;
+      text-align: center;
+      background: #e1efff;
+    }
+    .hero h1 {
+      margin-bottom: 10px;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+    .product {
+      background: white;
+      border: 1px solid #ddd;
+      padding: 15px;
+      text-align: center;
+      border-radius: 8px;
+    }
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25d366;
+      color: white;
+      border-radius: 50%;
+      padding: 15px;
+      font-size: 20px;
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <img src="https://images.unsplash.com/photo-1606811844501-077d316fe5b8?auto=format&fit=crop&w=1500&q=80" alt="Mercado" class="market-banner">
-    <h1>LuenaShop By KP</h1>
-    <p>Compre e venda artigos eletrônicos com facilidade</p>
-  </header>
+  <header>
+    <div class="logo">LuenaShop by KP</div>
+    <nav>
+      <a href="#">Início</a>
+      <a href="#produtos">Produtos</a>
+      <a href="#venda">Vender</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>  <section class="hero">
+    <h1>Compre e venda com facilidade em Luena!</h1>
+    <p>Artigos novos e usados. Confiável. Local. Simples.</p>
+  </section>  <section class="products" id="produtos">
+    <div class="product">
+      <h3>Telemóvel Usado</h3>
+      <p>Bom estado, preço acessível</p>
+    </div>
+    <div class="product">
+      <h3>Camiseta Nova</h3>
+      <p>Tamanhos variados, várias cores</p>
+    </div>
+    <div class="product">
+      <h3>Computador Portátil</h3>
+      <p>Ideal para trabalho e estudo</p>
+    </div>
+  </section>  <section class="hero" id="venda">
+    <h2>Quer vender algo?</h2>
+    <p>Entre em contato conosco via WhatsApp e publique seu artigo no LuenaShop!</p>
+  </section>  <footer id="contato">
+    <p>Entre em contato: kp.luenashop@gmail.com</p>
+    <p>&copy; 2025 LuenaShop by KP. Todos os direitos reservados.</p>
+  </footer><a class="whatsapp" href="https://wa.me/244XXXXXXXXX" target="_blank">W</a>
 
-  <nav>
-    <a href="#produtos">Produtos Disponíveis</a>
-    <a href="#novos">Produtos Novos</a>
-    <a href="#usados">Produtos Usados</a>
-    <a href="#contato">Contato</a>
-  </nav>
-
-  <section id="produtos">
-    <h2>Produtos Disponíveis</h2>
-    <div class="products">
-      <div class="product">
-        <img src="https://via.placeholder.com/300x200" alt="Produto 1">
-        <h3>Smartphone Samsung</h3>
-        <p>Estado: Novo</p>
-        <p>Preço: 150.000 Kz</p>
-        <div class="product-buttons">
-          <a href="https://wa.me/244949661412?text=Olá!%20Tenho%20interesse%20no%20Smartphone%20Samsung.%20Ainda%20está%20disponível?" class="whatsapp-button">Conversar com o Vendedor</a>
-          <a href="#" class="delivery-button">Entrega ao domicílio</a>
-          <a href="#" class="info-button">Obter mais informações</a>
-        </div>
-      </div>
-      <div class="product">
-        <img src="https://via.placeholder.com/300x200" alt="Produto 2">
-        <h3>Notebook HP</h3>
-        <p>Estado: Usado</p>
-        <p>Preço: 250.000 Kz</p>
-        <div class="product-buttons">
-          <a href="https://wa.me/244949661412?text=Olá!%20Tenho%20interesse%20no%20Notebook%20HP.%20Ainda%20está%20disponível?" class="whatsapp-button">Conversar com o Vendedor</a>
-          <a href="#" class="delivery-button">Entrega ao domicílio</a>
-          <a href="#" class="info-button">Obter mais informações</a>
-        </div>
-      </div>
-      <!-- Adicione mais produtos abaixo seguindo o mesmo modelo -->
-    </div>
-  </section>
-
-  <section id="novos">
-    <h2>Produtos Novos</h2>
-    <p>Em breve novos produtos eletrônicos disponíveis!</p>
-  </section>
-
-  <section id="usados">
-    <h2>Produtos Usados</h2>
-    <p>Confira nossa seleção de eletrônicos usados em bom estado.</p>
-  </section>
-
-  <section id="contato">
-    <h2>Entre em Contato</h2>
-    <div class="contact">
-      <p>Email: kpdigitalsolution98@gmail.com</p>
-      <p>WhatsApp: <a href="https://wa.me/244949661412" target="_blank">+244 949 661 412</a></p>
-    </div>
-  </section>
-
-  <footer>
-    &copy; 2025 LuenaShop By KP. Todos os direitos reservados.
-  </footer>
 </body>
 </html>
