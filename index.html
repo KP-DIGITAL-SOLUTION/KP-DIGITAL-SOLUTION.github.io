@@ -112,10 +112,18 @@
 
   <section>
     <h2>Contato</h2>
-    <form>
-      <input type="text" placeholder="Seu nome" required />
-      <input type="email" placeholder="Seu e-mail" required />
-      <textarea placeholder="Sua mensagem" rows="5" required></textarea>
+    <form action="https://formsubmit.co/kpdigitalsolution98@gmail.com" method="POST">
+      <input type="text" name="name" placeholder="Seu nome" required />
+      <input type="email" name="email" placeholder="Seu e-mail" required />
+      <textarea name="message" placeholder="Sua mensagem" rows="5" required></textarea>
+
+      <!-- Redireciona para página de obrigado após envio -->
+      <input type="hidden" name="_next" value="https://kp-digital-solution.github.io/obrigado.html" />
+      <!-- Desativa captcha visual -->
+      <input type="hidden" name="_captcha" value="false" />
+      <!-- Campo invisível anti-spam -->
+      <input type="text" name="_gotcha" style="display:none" />
+
       <button type="submit">Enviar</button>
     </form>
   </section>
